@@ -1,0 +1,79 @@
+<project name="verify-dem" default="run-tests" basedir=".">
+	
+	
+	<property name="testng.report.dir" value="${basedir}/target/surefire-reports" />
+	
+    <tstamp> 
+         <format  property = "ReportsTime"  pattern ="-HH-mm-ss_yyyy-MM-dd"/> 
+     </tstamp> 
+	<path id="classpath">
+		<pathelement location="${basedir}\lib\testng-6.8.jar"/>
+		<pathelement location="${basedir}\lib\saxon-8.7.jar"/>
+		<pathelement location="${basedir}\lib\selenium-server-standalone-2.42.2.jar"/>
+	
+	</path>
+		
+	<target name="run">
+		<antcall target="run-tests"/>
+		<antcall target="check"/>
+		<antcall target="deldir"/>
+	
+	</target>
+		
+
+	
+	<path id="testNgpath" >
+		<pathelement location="${basedir}\lib\testng-6.8.jar"/>
+		<pathelement location="${basedir}\lib\testng.jar"/>
+	</path>
+
+
+	<taskdef resource="testngtasks" classpathref="testNgpath" />
+	<path id="runpath">
+		<path refid="classpath"/>
+		<path location="config" />
+		<pathelement location="${test.build.dir}"/>
+	</path>
+	
+
+	
+	<target name="run-tests" >
+
+		<delete dir="${basedir}/testng-xslt">
+		</delete>
+		<mkdir dir="${basedir}/testng-xslt">
+		</mkdir>
+		<mkdir dir="${basedir}/testng-xslt/ScreenShot">
+		</mkdir>
+		<xslt in="${basedir}/target/surefire-reports/testng-results.xml" style="${basedir}/testng-results.xsl" out="${basedir}/testng-xslt/index.html">
+			<param expression="${basedir}/testng-xslt/" name="testNgXslt.outputDir" />
+			<param expression="true" name="testNgXslt.sortTestCaseLinks" />
+			<param expression="FAIL,SKIP,PASS,CONF,BY_CLASS" name="testNgXslt.testDetailsFilter" />
+			<param expression="true" name="testNgXslt.showRuntimeTotals" />
+			<classpath refid="runpath">
+			</classpath>
+		</xslt>
+
+	</target>
+	
+	<target name="check">
+			  <condition property="deldir">
+			    <available file="${basedir}/testng-xslt/ScreenShot" type="dir"/>
+			  </condition>
+			 </target>
+			
+	<target name="deldir" depends="check" if="deldir">
+				<copy todir="${basedir}/testng-xslt/ScreenShot" >
+							<fileset dir="${basedir}/src/test/resources/Screenshot" includes="**"/>
+						</copy>
+
+						<mkdir dir="${basedir}/test-output/ScreenShot">
+								</mkdir>
+						<copy todir="${basedir}/test-output/ScreenShot" >
+									<fileset dir="${basedir}/ScreenShot" includes="**"/>
+								</copy>
+						
+						<copy file="${testng.report.dir}/emailable-report.html" todir="${basedir}/testng-xslt"/>
+			 </target>
+
+</project>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-EN_Sites">
+              <span class="suite-name border-passed">EN_Sites</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-EN_Sites">
+                    <span>C:\Users\CipherCloud\git\Atom8\src\test\resources\DemoLogin.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-EN_Sites">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-EN_Sites">
+                    <span>2 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-EN_Sites">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-EN_Sites">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-EN_Sites">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-EN_Sites">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">2 methods,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-EN_Sites" class="hide-methods passed suite-EN_Sites"> (hide)</a> <!-- hide-methods passed suite-EN_Sites -->
+                      <a href="#" panel-name="suite-EN_Sites" class="show-methods passed suite-EN_Sites"> (show)</a> <!-- show-methods passed suite-EN_Sites -->
+                    </span>
+                    <div class="method-list-content passed suite-EN_Sites">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EN_Sites" title="com.ciphercloud.portal.testcases.Login" hash-for-method="cac_SignIn({field={User Name=admin, Password=admin}, button={login=Log In}, label={message=You have logged in s...)">cac_SignIn({field={User Name=admin, Password=admin}, button={login=Log In}, label={message=You have logged in s...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EN_Sites" title="com.ciphercloud.portal.testcases.Login" hash-for-method="cac_configureAD({field={AD Server Hostname/IP Address=AD, Port Number=389, Base DN Settings=dc=djfjsdf,dc=gjgjh, AD ...)">cac_configureAD({field={AD Server Hostname/IP Address=AD, Port Number=389, Base DN Settings=dc=djfjsdf,dc=gjgjh, AD ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-EN_Sites -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-EN_Sites" class="panel EN_Sites">
+          <div class="suite-EN_Sites-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ciphercloud.portal.testcases.Login</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="cac_SignIn({field={User Name=admin, Password=admin}, button={login=Log In}, label={message=You have logged in s...)">
+                  </a> <!-- cac_SignIn({field={User Name=admin, Password=admin}, button={login=Log In}, label={message=You have logged in s...) -->
+                  <span class="method-name">cac_SignIn</span>
+                  <span class="parameters">({field={User Name=admin, Password=admin}, button={login=Log In}, label={message=You have logged in successfully}, url={url=http://172.16.18.13:8080/feproxy-webadmin/login}, title={title=CipherCloud Console, Title2=Admin Authentication}})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="cac_configureAD({field={AD Server Hostname/IP Address=AD, Port Number=389, Base DN Settings=dc=djfjsdf,dc=gjgjh, AD ...)">
+                  </a> <!-- cac_configureAD({field={AD Server Hostname/IP Address=AD, Port Number=389, Base DN Settings=dc=djfjsdf,dc=gjgjh, AD ...) -->
+                  <span class="method-name">cac_configureAD</span>
+                  <span class="parameters">({field={AD Server Hostname/IP Address=AD, Port Number=389, Base DN Settings=dc=djfjsdf,dc=gjgjh, AD Domain=fhgfghfgh.com}, button={connectAD=Connect AD Server, connect=Connect}, label={AD User ID=apere, AD Password=dhfjsh}, title={title=Admin Authentication}})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-EN_Sites-class-passed -->
+        </div> <!-- panel EN_Sites -->
+        <div panel-name="test-xml-EN_Sites" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\CipherCloud\git\Atom8\src\test\resources\DemoLogin.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;EN_Sites&quot;&gt;
+  &lt;parameter name=&quot;localhost&quot; value=&quot;false&quot;/&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;test name=&quot;BeforeAppEx&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.ciphercloud.suite.BeforeAppEx&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- BeforeAppEx --&gt;
+  &lt;test name=&quot;LOGIN&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.ciphercloud.portal.testcases.Login&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;cac_SignIn&quot;/&gt;
+          &lt;include name=&quot;cac_configureAD&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.ciphercloud.portal.testcases.Login --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- LOGIN --&gt;
+&lt;/suite&gt; &lt;!-- EN_Sites --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-EN_Sites" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for EN_Sites</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">BeforeAppEx (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">LOGIN (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-EN_Sites" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for EN_Sites</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">Independent</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">cac_SignIn</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">cac_configureAD</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">smokeTest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">cac_SignIn</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">cac_configureAD</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-EN_Sites" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for EN_Sites</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_EN_Sites');
+function tableData_EN_Sites() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(2);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'cac_SignIn')
+data.setCell(0, 2, 'com.ciphercloud.portal.testcases.Login')
+data.setCell(0, 3, 9225);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'cac_configureAD')
+data.setCell(1, 2, 'com.ciphercloud.portal.testcases.Login')
+data.setCell(1, 3, 6597);
+window.suiteTableData['EN_Sites']= { tableData: data, tableDiv: 'times-div-EN_Sites'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 15 seconds</span>
+              <div id="times-div-EN_Sites">
+              </div> <!-- times-div-EN_Sites -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-EN_Sites" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for EN_Sites</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-EN_Sites" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-EN_Sites" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ciphercloud.suite.BeforeAppEx</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">beforeSuite(false, chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ciphercloud.portal.testcases.Login</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">665 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">cac_SignIn({field={User Name=admin, Password=admin}, button={login=Log In}, label={message=You have logged in s...)</span>
+                <span class="method-start">5239 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">cac_configureAD({field={AD Server Hostname/IP Address=AD, Port Number=389, Base DN Settings=dc=djfjsdf,dc=gjgjh, AD ...)</span>
+                <span class="method-start">14468 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ciphercloud.suite.BeforeAppEx</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">afterSuite</span>
+                <span class="method-start">21105 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

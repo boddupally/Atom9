@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="EN_Sites" duration-ms="17590" started-at="2015-03-13T13:27:51Z" finished-at="2015-03-13T13:28:09Z">
+    <groups>
+      <group name="Independent">
+        <method signature="Login.cac_SignIn(java.util.LinkedHashMap)[pri:0, instance:com.ciphercloud.portal.testcases.Login@366e2eef]" name="cac_SignIn" class="com.ciphercloud.portal.testcases.Login"/>
+        <method signature="Login.cac_configureAD(java.util.LinkedHashMap)[pri:0, instance:com.ciphercloud.portal.testcases.Login@366e2eef]" name="cac_configureAD" class="com.ciphercloud.portal.testcases.Login"/>
+      </group> <!-- Independent -->
+      <group name="smokeTest">
+        <method signature="Login.cac_SignIn(java.util.LinkedHashMap)[pri:0, instance:com.ciphercloud.portal.testcases.Login@366e2eef]" name="cac_SignIn" class="com.ciphercloud.portal.testcases.Login"/>
+        <method signature="Login.cac_configureAD(java.util.LinkedHashMap)[pri:0, instance:com.ciphercloud.portal.testcases.Login@366e2eef]" name="cac_configureAD" class="com.ciphercloud.portal.testcases.Login"/>
+      </group> <!-- smokeTest -->
+    </groups>
+    <test name="BeforeAppEx" duration-ms="6" started-at="2015-03-13T13:27:51Z" finished-at="2015-03-13T13:27:51Z">
+    </test> <!-- BeforeAppEx -->
+    <test name="LOGIN" duration-ms="17582" started-at="2015-03-13T13:27:51Z" finished-at="2015-03-13T13:28:09Z">
+      <class name="com.ciphercloud.suite.BeforeAppEx">
+        <test-method status="PASS" signature="beforeSuite(java.lang.String, java.lang.String)[pri:0, instance:com.ciphercloud.suite.BeforeAppEx@668bc3d5]" name="beforeSuite" is-config="true" duration-ms="905" started-at="2015-03-13T18:57:50Z" finished-at="2015-03-13T18:57:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.ciphercloud.suite.BeforeAppEx@668bc3d5]" name="afterSuite" is-config="true" duration-ms="3343" started-at="2015-03-13T18:58:09Z" finished-at="2015-03-13T18:58:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.ciphercloud.suite.BeforeAppEx -->
+      <class name="com.ciphercloud.portal.testcases.Login">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.ciphercloud.portal.testcases.Login@366e2eef]" name="beforeClass" is-config="true" duration-ms="3078" started-at="2015-03-13T18:57:51Z" finished-at="2015-03-13T18:57:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="cac_SignIn(java.util.LinkedHashMap)[pri:0, instance:com.ciphercloud.portal.testcases.Login@366e2eef]" name="cac_SignIn" duration-ms="7687" started-at="2015-03-13T18:57:54Z" data-provider="DataProvider" finished-at="2015-03-13T18:58:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{field={User Name=admin, Password=admin}, button={login=Log In}, label={message=You have logged in successfully}, url={url=http://172.16.18.13:8080/feproxy-webadmin/login}, title={title=CipherCloud Console, Title2=Admin Authentication}}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cac_SignIn -->
+        <test-method status="PASS" signature="cac_configureAD(java.util.LinkedHashMap)[pri:0, instance:com.ciphercloud.portal.testcases.Login@366e2eef]" name="cac_configureAD" duration-ms="6779" started-at="2015-03-13T18:58:02Z" data-provider="DataProvider" finished-at="2015-03-13T18:58:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{field={AD Server Hostname/IP Address=AD, Port Number=389, Base DN Settings=dc=djfjsdf,dc=gjgjh, AD Domain=fhgfghfgh.com}, button={connectAD=Connect AD Server, connect=Connect}, label={AD User ID=apere, AD Password=dhfjsh}, title={title=Admin Authentication}}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cac_configureAD -->
+      </class> <!-- com.ciphercloud.portal.testcases.Login -->
+    </test> <!-- LOGIN -->
+  </suite> <!-- EN_Sites -->
+</testng-results>

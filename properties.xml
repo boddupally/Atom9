@@ -1,0 +1,6 @@
+<properties>
+reports-header=Smoke suite Results
+reports-failedlogs=Logs of failed test cases
+reports-screenShot=Screen Shots of failed TestCase
+reports-overview=Overview of Smoke suite Results
+</properties>

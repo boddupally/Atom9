@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [EN_Sites]">
+  <parameter name="localhost" value="true"/>
+  <parameter name="browser" value="chrome"/>
+  <test name="LOGIN(failed)">
+    <classes>
+      <class name="com.ciphercloud.portal.testcases.Login">
+        <methods>
+          <include name="cac_configureAD" invocation-numbers="0"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.ciphercloud.portal.testcases.Login -->
+      <class name="com.ciphercloud.suite.BeforeAppEx">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- com.ciphercloud.suite.BeforeAppEx -->
+    </classes>
+  </test> <!-- LOGIN(failed) -->
+</suite> <!-- Failed suite [EN_Sites] -->
