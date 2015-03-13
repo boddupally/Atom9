@@ -136,12 +136,12 @@
 	</dependencies>
 
 
-<pluginRepositories>
+<!-- <pluginRepositories>
         <pluginRepository>
             <id>project.local</id>
             <url>file:${basedir}/lib</url>
         </pluginRepository>
-    </pluginRepositories>
+    </pluginRepositories> -->
 
 
 	<repositories>
