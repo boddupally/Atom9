@@ -87,13 +87,13 @@
 		</dependency>
 
 
-	<!-- 	<dependency>
+		<dependency>
 			<groupId>LIB_NAME</groupId>
 			<artifactId>LIB_NAME</artifactId>
 			<version>1.0.0</version>
 			<scope>system</scope>
-			<systemPath>${basedir}/lib/reaper1.4.jar</systemPath>
-		</dependency> -->
+			<systemPath>${basedir}/lib/smart_cipher1.1.jar</systemPath>
+		</dependency>
 		
 	<!-- 	<dependency>
 			<groupId>LIB_NAME1</groupId>
