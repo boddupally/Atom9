@@ -222,7 +222,9 @@
 					<suiteXmlFiles>
 <!-- 						<suiteXmlFile>${testsuite}</suiteXmlFile>
  -->						
- <suiteXmlFile>src/test/resources/DemoLogin.xml</suiteXmlFile>
+<!--  <suiteXmlFile>src/test/resources/DemoLogin.xml</suiteXmlFile> -->
+ 
+ <suiteXmlFile>src/test/resources/${testsuite}</suiteXmlFile>
 					</suiteXmlFiles>
 
 
