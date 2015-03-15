@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<suite name="EN_Sites" verbose="1">
+<suite name="EN_Sites" verbose="1" preserve-order="true" >
 
 
  <parameter name="browser" value="chrome"/>
@@ -24,7 +24,7 @@
 		</classes> 
 	    
 	</test>
-
+	
 	
 	
 </suite>

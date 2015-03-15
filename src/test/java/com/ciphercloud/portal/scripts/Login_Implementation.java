@@ -4,17 +4,8 @@
 package com.ciphercloud.portal.scripts;
 
 import java.util.LinkedHashMap;
-import java.util.List;
 import java.util.Map.Entry;
-import java.util.Set;
-
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
 import com.ciphercloud.autoUtil.Atom;
 import com.ciphercloud.util.DataSource;
 import com.ciphercloud.util.SelectingWebDriver;
@@ -75,7 +66,6 @@ public class Login_Implementation  {
 		autoutil.clickButton(dataSheet(credentials, "button", "connectAD"), propFile("button"));
 		for(Entry<String, String> entry : dataSheet(credentials, "label").entrySet())
 		autoutil.verifyingLabelsAndTextTheFields(entry.getKey(), entry.getValue());
-		System.out.println();
 		autoutil.clickButton(dataSheet(credentials, "button", "connect"), propFile("button"));
 		autoutil.waitTime(3000);
 

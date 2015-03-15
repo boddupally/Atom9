@@ -7,7 +7,17 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
+
+<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<slf4j.version>1.6.6</slf4j.version>
+		<logback.version>1.0.7</logback.version>
+	</properties>
+
+
 	<dependencies>
+
+
 
 <dependency>
 	<groupId>net.sf.saxon</groupId>
@@ -110,6 +120,11 @@
 			<version>1.4.01</version>
 		</dependency>
 
+
+
+
+
+
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-ooxml</artifactId>
@@ -131,17 +146,34 @@
 		</dependency>
 		
 	
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>${slf4j.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>${logback.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-core</artifactId>
+			<version>${logback.version}</version>
+		</dependency>
+		
+		
 		
 
 	</dependencies>
 
 
-<!-- <pluginRepositories>
+<pluginRepositories>
         <pluginRepository>
             <id>project.local</id>
             <url>file:${basedir}/lib</url>
         </pluginRepository>
-    </pluginRepositories> -->
+    </pluginRepositories>
 
 
 	<repositories>
@@ -211,10 +243,8 @@
 
 
 					<systemPropertyVariables>
-<!-- 					<browserName>firefox</browserName>
- -->										<browserName>${browser}</browserName>
-					
 			<application.properties>src/test/resources/CipherCloud-APP-Util.properties</application.properties>
+			<browserName>${browser}</browserName>
           <!--   <propertyName>${browser}</propertyName>
              <propertyName>${localhost}</propertyName> -->
             
@@ -224,8 +254,6 @@
 					<suiteXmlFiles>
 <!-- 						<suiteXmlFile>${testsuite}</suiteXmlFile>
  -->						
-<!--  <suiteXmlFile>src/test/resources/DemoLogin.xml</suiteXmlFile>
- --> 
  <suiteXmlFile>src/test/resources/${testsuite}</suiteXmlFile>
 					</suiteXmlFiles>
 

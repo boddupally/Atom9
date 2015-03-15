@@ -1122,7 +1122,7 @@
     <xsl:template name="powered-by">
         <div style="margin-top: 15px; color: gray; text-align: center; font-size: 9px;">
             POWERED-BY
-            <a href="http://ciphercloud/QMS/processes/Quality%20Systems/The%20Team/Quality%20Systems%20Team.aspx" style="color: #8888aa;" target="_blank">
+            <a href="http://www.ciphercloud.com/" style="color: #8888aa;" target="_blank">
                 CipherCloud Platform QA AUTOMATION TEAM
             </a>
         </div>

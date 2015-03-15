@@ -15,10 +15,14 @@ import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.ciphercloud.util.DataSource;
 
 public class SelectingWebDriver {
+    private static final Logger log = LoggerFactory.getLogger(SelectingWebDriver.class);
+
 	static String selectbrowser = null;
 	public static WebDriver driver;
 
@@ -26,9 +30,8 @@ public class SelectingWebDriver {
 		WebDriver driver2 = null;
 		if (driver == null) {
 			selectbrowser = DataSource.browser;
-			if(System.getProperty("browserName")!=null){
-				selectbrowser=System.getProperty("browserName");
-				System.out.println(selectbrowser);
+			if(System.getProperty("browser")!=null){
+				selectbrowser=System.getProperty("browser");
 			}
 			if (selectbrowser.equals("firefox")) {
 				if (DataSource.localhost.equals("false")) {
@@ -46,9 +49,8 @@ public class SelectingWebDriver {
 						
 						driver2 = new FirefoxDriver(new FirefoxBinary(new File("C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe")),profile);
 					} catch (Exception localException) {
-						System.out.println();
 						localException.printStackTrace();
-						System.out.println(localException.getMessage());
+						log.info(localException.getMessage());
 					}
 				else {
 					System.out
@@ -112,14 +114,13 @@ public class SelectingWebDriver {
 						//driver2 = new ChromeDriver();
 						driver2.manage().deleteAllCookies();
 					} else {
-						System.out.println("please provide locahost as true or false");
+						log.info("please provide locahost as true or false");
 					}
 				}else {
-					System.out.println("please provide proper brwoser name say  firefox, iExplorer,chrome");
+					log.info("please provide proper brwoser name say  firefox, iExplorer,chrome");
 				}
 			 
 			driver = driver2;
-			System.out.println(driver.hashCode());
 			return driver;
 		}
 		return driver;
