@@ -300,7 +300,7 @@ if(element!=null){
 	return element;
 }
 else{	
-	Asserting.verifyEquals("null", labelName, "unable to find the label :"+ labelName) ;
+	Asserting.verifyEquals("null", labelName) ;
 	return element;
 }
 	  }
