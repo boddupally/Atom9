@@ -1,4 +1,19 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 22.729 sec - in TestSuite
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 19.827 sec <<< FAILURE! - in TestSuite
+cac_configureAD(com.ciphercloud.portal.testcases.Login)  Time elapsed: 6.708 sec  <<< FAILURE!
+java.lang.AssertionError: expected [AD User ID] but found [null]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:165)
+	at com.ciphercloud.util.Asserting.assertEquals(Asserting.java:45)
+	at com.ciphercloud.util.Asserting.verifyEquals(Asserting.java:113)
+	at com.ciphercloud.driver.CipherAtom.findDisplayedElement(CipherAtom.java:303)
+	at com.ciphercloud.driver.CipherAtom.verifyResultpath(CipherAtom.java:228)
+	at com.ciphercloud.driver.CipherAtom.verifyingDpath(CipherAtom.java:141)
+	at com.ciphercloud.driver.CipherAtom.verifyingLabelsAndTextTheFields(CipherAtom.java:133)
+	at com.ciphercloud.portal.scripts.Login_Implementation.cac_configureAD(Login_Implementation.java:70)
+	at com.ciphercloud.portal.testcases.Login.cac_configureAD(Login.java:58)
+

@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [EN_Sites]">
+<suite name="Failed suite [EN_Sites]" parallel="tests">
   <parameter name="localhost" value="true"/>
   <parameter name="browser" value="chrome"/>
-  <test name="LOGIN(failed)">
+  <test name="configAD(failed)" parallel="tests">
+    <groups>
+      <run>
+        <include name="login"/>
+        <include name="configAD"/>
+        <include name="logout"/>
+      </run>
+    </groups>
     <classes>
       <class name="com.ciphercloud.portal.testcases.Login">
         <methods>
+          <include name="cac_login"/>
+          <include name="cac_logout"/>
           <include name="cac_configureAD" invocation-numbers="0"/>
-          <include name="beforeClass"/>
         </methods>
       </class> <!-- com.ciphercloud.portal.testcases.Login -->
       <class name="com.ciphercloud.suite.BeforeAppEx">
@@ -18,5 +26,5 @@
         </methods>
       </class> <!-- com.ciphercloud.suite.BeforeAppEx -->
     </classes>
-  </test> <!-- LOGIN(failed) -->
+  </test> <!-- configAD(failed) -->
 </suite> <!-- Failed suite [EN_Sites] -->

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="14.479" tests="2" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="16.132" tests="2" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_31\jre\bin"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="Service Pack 1"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\CipherCloud\git\Atom8"/>
+    <property name="user.dir" value="C:\Users\CipherCloud\git\Atom9"/>
     <property name="java.runtime.version" value="1.8.0_31-b13"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_31\jre\lib\endorsed"/>
@@ -25,9 +25,9 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 7"/>
-    <property name="classworlds.conf" value="E:\AutoCloud2\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf8226958546524453733.tmp"/>
+    <property name="classworlds.conf" value="E:\AutoCloud\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf6493158238085249137.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_31\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files (x86)/Java/bin/server;C:/Program Files (x86)/Java/bin;C:/Program Files (x86)/Java/lib/amd64;C:\ProgramData\Oracle\Java\javapath;c:\Program Files (x86)\Intel\iCLS Client\;c:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Java\jdk1.8.0_31\bin;C:\Users\CipherCloud\android-sdks\tools;C:\Users\CipherCloud\android-sdks\platform-tools;C:\Users\CipherCloud\Downloads\eclipse\eclipse\eclipse;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_31\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files (x86)/Java/bin/server;C:/Program Files (x86)/Java/bin;C:/Program Files (x86)/Java/lib/amd64;C:\ProgramData\Oracle\Java\javapath;c:\Program Files (x86)\Intel\iCLS Client\;c:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Java\jdk1.8.0_31\bin;C:\Users\CipherCloud\android-sdks\tools;C:\Users\CipherCloud\android-sdks\platform-tools;E:\Downloads;;C:\Users\CipherCloud\Downloads\eclipse\eclipse\eclipse;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -52,7 +52,7 @@
     <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_31\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_31\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_31\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_31\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_31\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_31\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_31\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_31\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_31\jre\classes"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="C:\Users\CipherCloud\git\Atom8\EMBEDDED"/>
+    <property name="maven.home" value="C:\Users\CipherCloud\git\Atom9\EMBEDDED"/>
     <property name="file.separator" value="\"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -60,6 +60,39 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="cac_SignIn" classname="com.ciphercloud.portal.testcases.Login" time="7.7"/>
-  <testcase name="cac_configureAD" classname="com.ciphercloud.portal.testcases.Login" time="6.779"/>
+  <testcase name="cac_SignIn" classname="com.ciphercloud.portal.testcases.Login" time="9.424"/>
+  <testcase name="cac_configureAD" classname="com.ciphercloud.portal.testcases.Login" time="6.708">
+    <failure message="expected [AD User ID] but found [null]" type="java.lang.AssertionError">java.lang.AssertionError: expected [AD User ID] but found [null]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:165)
+	at com.ciphercloud.util.Asserting.assertEquals(Asserting.java:45)
+	at com.ciphercloud.util.Asserting.verifyEquals(Asserting.java:113)
+	at com.ciphercloud.driver.CipherAtom.findDisplayedElement(CipherAtom.java:303)
+	at com.ciphercloud.driver.CipherAtom.verifyResultpath(CipherAtom.java:228)
+	at com.ciphercloud.driver.CipherAtom.verifyingDpath(CipherAtom.java:141)
+	at com.ciphercloud.driver.CipherAtom.verifyingLabelsAndTextTheFields(CipherAtom.java:133)
+	at com.ciphercloud.portal.scripts.Login_Implementation.cac_configureAD(Login_Implementation.java:70)
+	at com.ciphercloud.portal.testcases.Login.cac_configureAD(Login.java:58)
+</failure>
+    <system-out><![CDATA[11545 [PoolService-0] INFO  com.ciphercloud.driver.CipherAtom - verifying label:AD Server Hostname/IP Address and inserting its value  : AD 
+11882 [PoolService-0] INFO  com.ciphercloud.driver.CipherAtom - inserted the value:AD 
+11882 [PoolService-0] INFO  com.ciphercloud.driver.CipherAtom - verifying label:Port Number and inserting its value  : 389 
+12208 [PoolService-0] INFO  com.ciphercloud.driver.CipherAtom - inserted the value:389 
+12208 [PoolService-0] INFO  com.ciphercloud.driver.CipherAtom - verifying label:Base DN Settings and inserting its value  : dc=djfjsdf,dc=gjgjh 
+12590 [PoolService-0] INFO  com.ciphercloud.driver.CipherAtom - inserted the value:dc=djfjsdf,dc=gjgjh 
+12590 [PoolService-0] INFO  com.ciphercloud.driver.CipherAtom - verifying label:AD Domain and inserting its value  : fhgfghfgh.com 
+13000 [PoolService-0] INFO  com.ciphercloud.driver.CipherAtom - inserted the value:fhgfghfgh.com 
+13645 [PoolService-0] INFO  com.ciphercloud.driver.CipherAtom - clicked the button:Connect AD Server 
+13645 [PoolService-0] INFO  com.ciphercloud.driver.CipherAtom - verifying label:AD User ID and inserting its value  : apere 
+13863 [PoolService-0] INFO  com.ciphercloud.util.Asserting - screenShot at asserting 
+14271 [PoolService-0] INFO  com.ciphercloud.driver.CipherAtom - verifying label:AD Password and inserting its value  : dhfjsh 
+14650 [PoolService-0] INFO  com.ciphercloud.driver.CipherAtom - inserted the value:dhfjsh 
+14820 [PoolService-0] INFO  com.ciphercloud.driver.CipherAtom - clicked the button:Connect 
+]]></system-out>
+    <system-err><![CDATA[Mar 16, 2015 10:47:13 AM org.openqa.selenium.remote.Augmenter extractRemoteWebDriver
+WARNING: Augmenter should be applied to the instances of @Augmentable clases or previously augmented instances only
+]]></system-err>
+  </testcase>
 </testsuite>

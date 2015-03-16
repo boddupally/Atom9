@@ -244,7 +244,7 @@
 
 					<systemPropertyVariables>
 			<application.properties>src/test/resources/CipherCloud-APP-Util.properties</application.properties>
-			<browserName>${browser}</browserName>
+			<browserName>firefox</browserName>
           <!--   <propertyName>${browser}</propertyName>
              <propertyName>${localhost}</propertyName> -->
             
@@ -254,7 +254,7 @@
 					<suiteXmlFiles>
 <!-- 						<suiteXmlFile>${testsuite}</suiteXmlFile>
  -->						
- <suiteXmlFile>src/test/resources/${testsuite}</suiteXmlFile>
+ <suiteXmlFile>src/test/resources/DemoLogin.xml</suiteXmlFile>
 					</suiteXmlFiles>
 
 

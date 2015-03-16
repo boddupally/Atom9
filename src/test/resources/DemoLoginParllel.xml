@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<suite name="EN_Sites" verbose="1" preserve-order="true" parallel="tests" thread-count="5">
+
+
+ <parameter name="browser" value="chrome"/>
+  <parameter name="localhost" value="true"/>
+
+
+	<test name="BeforeAppEx" preserve-order="true">
+	<classes>
+			<class name="com.ciphercloud.suite.BeforeAppEx"/>
+		</classes>
+	</test>
+	
+	
+	<test name="configAD" preserve-order="true">
+	<groups>
+			<dependencies>
+		<group name="configAD" depends-on="login" />	
+		<group name="logout" depends-on="configAD" />	
+			</dependencies>
+			<run>
+				<include name="login" />
+				<include name="configAD" />
+				<include name="logout" />
+			</run>
+</groups>
+
+	   <classes>
+			<class name="com.ciphercloud.portal.testcases.Login"/>
+			<methods>
+			    <include name="cac_login"/>
+			    <include name="cac_configureAD"/>
+			    <include name="cac_logout"/>
+			</methods>
+		</classes> 
+	    
+	</test>
+
+	<test name="configEndAuth" preserve-order="true">
+	<groups>
+			<dependencies>
+		<group name="endAuth" 		depends-on="login" />	
+		<group name="logout" 		depends-on="endAuth" />	
+			</dependencies>
+			<run>
+				<include name="login" />
+				<include name="endAuth" />
+				<include name="logout" />
+			</run>
+</groups>
+
+	   <classes>
+			<class name="com.ciphercloud.portal.testcases.Login"/>
+			<methods>
+			    <include name="cac_login"/>
+			    <include name="cac_endUserAuth"/>
+			    <include name="cac_logout"/>
+			</methods>
+		</classes> 
+	    
+	</test>
+
+</suite>
+<!-- Suite -->

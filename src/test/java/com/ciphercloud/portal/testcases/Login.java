@@ -27,14 +27,8 @@ public class Login {
 		if(login==null)
 			login = new Login_Implementation();
 	}
-	
-	
-	
-	@BeforeClass()
-	public void beforeClass(){
-		login = new Login_Implementation();
-	}
-	
+
+
 //data providers	
 	@DataProvider(parallel=true)
 	public Object[][] DataProvider(Method m){
@@ -43,28 +37,33 @@ public class Login {
 		return object;
 	}
 	
-	
-	
-	@DataProvider
-	public Object[][] DataProvider4Iterations(Method m){
-		Object[][] object =null;
-		object =dd.dataDrive4Iteration(m.getName());
-		return object;
-	}
-	
+
 	
 
-@Test(dataProvider="DataProvider",priority=1,groups = { "smokeTest" ,"Independent"})
-	public void cac_SignIn(
+@Test(dataProvider="DataProvider",priority=1,groups = { "login" ,"Independent"})
+	public void cac_login(
 			LinkedHashMap<String, LinkedHashMap<String, String>> credentials) {
-	getInstance();login.cac_SignIn(credentials);
+	getInstance();login.cac_login(credentials);
 	}
 
 
-@Test(dataProvider="DataProvider",priority=1,groups = { "smokeTest" ,"Independent"})
+@Test(dataProvider="DataProvider",priority=1,groups = { "configAD" ,"Independent"})
 public void cac_configureAD(
 		LinkedHashMap<String, LinkedHashMap<String, String>> credentials) {
-getInstance();login.cac_configureAD(credentials);
+	getInstance();login.cac_configureAD(credentials);
 }
+
+@Test(dataProvider="DataProvider",groups = { "endAuth" ,"Independent"})
+public void cac_endUserAuth(
+		LinkedHashMap<String, LinkedHashMap<String, String>> credentials) {
+	getInstance();login.cac_endUserAuth(credentials);
+}
+
+@Test(dataProvider="DataProvider",groups = { "logout" ,"Independent"})
+public void cac_logout(
+		LinkedHashMap<String, LinkedHashMap<String, String>> credentials) {
+	getInstance();login.cac_logout(credentials);
+}
+
 
 }

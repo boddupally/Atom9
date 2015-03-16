@@ -1,27 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="EN_Sites" duration-ms="20452" started-at="2015-03-13T13:04:11Z" finished-at="2015-03-13T13:04:31Z">
+  <suite name="EN_Sites" duration-ms="23120" started-at="2015-03-16T07:00:47Z" finished-at="2015-03-16T07:01:10Z">
     <groups>
       <group name="Independent">
-        <method signature="Login.cac_SignIn(java.util.LinkedHashMap)[pri:0, instance:com.ciphercloud.portal.testcases.Login@17550481]" name="cac_SignIn" class="com.ciphercloud.portal.testcases.Login"/>
-        <method signature="Login.cac_configureAD(java.util.LinkedHashMap)[pri:0, instance:com.ciphercloud.portal.testcases.Login@17550481]" name="cac_configureAD" class="com.ciphercloud.portal.testcases.Login"/>
+        <method signature="Login.cac_login(java.util.LinkedHashMap)[pri:0, instance:com.ciphercloud.portal.testcases.Login@76329302]" name="cac_login" class="com.ciphercloud.portal.testcases.Login"/>
+        <method signature="Login.cac_configureAD(java.util.LinkedHashMap)[pri:0, instance:com.ciphercloud.portal.testcases.Login@76329302]" name="cac_configureAD" class="com.ciphercloud.portal.testcases.Login"/>
+        <method signature="Login.cac_logout(java.util.LinkedHashMap)[pri:0, instance:com.ciphercloud.portal.testcases.Login@76329302]" name="cac_logout" class="com.ciphercloud.portal.testcases.Login"/>
+        <method signature="Login.cac_login(java.util.LinkedHashMap)[pri:0, instance:com.ciphercloud.portal.testcases.Login@1176dcec]" name="cac_login" class="com.ciphercloud.portal.testcases.Login"/>
+        <method signature="Login.cac_endUserAuth(java.util.LinkedHashMap)[pri:0, instance:com.ciphercloud.portal.testcases.Login@1176dcec]" name="cac_endUserAuth" class="com.ciphercloud.portal.testcases.Login"/>
+        <method signature="Login.cac_logout(java.util.LinkedHashMap)[pri:0, instance:com.ciphercloud.portal.testcases.Login@1176dcec]" name="cac_logout" class="com.ciphercloud.portal.testcases.Login"/>
       </group> <!-- Independent -->
-      <group name="smokeTest">
-        <method signature="Login.cac_SignIn(java.util.LinkedHashMap)[pri:0, instance:com.ciphercloud.portal.testcases.Login@17550481]" name="cac_SignIn" class="com.ciphercloud.portal.testcases.Login"/>
-        <method signature="Login.cac_configureAD(java.util.LinkedHashMap)[pri:0, instance:com.ciphercloud.portal.testcases.Login@17550481]" name="cac_configureAD" class="com.ciphercloud.portal.testcases.Login"/>
-      </group> <!-- smokeTest -->
+      <group name="logout">
+        <method signature="Login.cac_logout(java.util.LinkedHashMap)[pri:0, instance:com.ciphercloud.portal.testcases.Login@76329302]" name="cac_logout" class="com.ciphercloud.portal.testcases.Login"/>
+        <method signature="Login.cac_logout(java.util.LinkedHashMap)[pri:0, instance:com.ciphercloud.portal.testcases.Login@1176dcec]" name="cac_logout" class="com.ciphercloud.portal.testcases.Login"/>
+      </group> <!-- logout -->
+      <group name="endAuth">
+        <method signature="Login.cac_endUserAuth(java.util.LinkedHashMap)[pri:0, instance:com.ciphercloud.portal.testcases.Login@1176dcec]" name="cac_endUserAuth" class="com.ciphercloud.portal.testcases.Login"/>
+      </group> <!-- endAuth -->
+      <group name="login">
+        <method signature="Login.cac_login(java.util.LinkedHashMap)[pri:0, instance:com.ciphercloud.portal.testcases.Login@76329302]" name="cac_login" class="com.ciphercloud.portal.testcases.Login"/>
+        <method signature="Login.cac_login(java.util.LinkedHashMap)[pri:0, instance:com.ciphercloud.portal.testcases.Login@1176dcec]" name="cac_login" class="com.ciphercloud.portal.testcases.Login"/>
+      </group> <!-- login -->
+      <group name="configAD">
+        <method signature="Login.cac_configureAD(java.util.LinkedHashMap)[pri:0, instance:com.ciphercloud.portal.testcases.Login@76329302]" name="cac_configureAD" class="com.ciphercloud.portal.testcases.Login"/>
+      </group> <!-- configAD -->
     </groups>
-    <test name="BeforeAppEx" duration-ms="12" started-at="2015-03-13T13:04:11Z" finished-at="2015-03-13T13:04:11Z">
+    <test name="BeforeAppEx" duration-ms="0" started-at="2015-03-16T07:00:47Z" finished-at="2015-03-16T07:00:47Z">
     </test> <!-- BeforeAppEx -->
-    <test name="LOGIN" duration-ms="20409" started-at="2015-03-13T13:04:11Z" finished-at="2015-03-13T13:04:31Z">
+    <test name="configEndAuth" duration-ms="20484" started-at="2015-03-16T07:00:47Z" finished-at="2015-03-16T07:01:07Z">
       <class name="com.ciphercloud.suite.BeforeAppEx">
-        <test-method status="PASS" signature="beforeSuite(java.lang.String, java.lang.String)[pri:0, instance:com.ciphercloud.suite.BeforeAppEx@7a79be86]" name="beforeSuite" is-config="true" duration-ms="620" started-at="2015-03-13T18:34:10Z" finished-at="2015-03-13T18:34:11Z">
+        <test-method status="PASS" signature="beforeSuite(java.lang.String, java.lang.String)[pri:0, instance:com.ciphercloud.suite.BeforeAppEx@2473b9ce]" name="beforeSuite" is-config="true" duration-ms="469" started-at="2015-03-16T12:30:46Z" finished-at="2015-03-16T12:30:47Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[false]]>
+                <![CDATA[true]]>
               </value>
             </param>
             <param index="1">
@@ -33,39 +47,83 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.ciphercloud.suite.BeforeAppEx@7a79be86]" name="afterSuite" is-config="true" duration-ms="1429" started-at="2015-03-13T18:34:31Z" finished-at="2015-03-13T18:34:33Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.ciphercloud.suite.BeforeAppEx@2473b9ce]" name="afterSuite" is-config="true" duration-ms="0" started-at="2015-03-16T12:31:10Z" finished-at="2015-03-16T12:31:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
       </class> <!-- com.ciphercloud.suite.BeforeAppEx -->
       <class name="com.ciphercloud.portal.testcases.Login">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.ciphercloud.portal.testcases.Login@17550481]" name="beforeClass" is-config="true" duration-ms="4564" started-at="2015-03-13T18:34:11Z" finished-at="2015-03-13T18:34:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="cac_SignIn(java.util.LinkedHashMap)[pri:0, instance:com.ciphercloud.portal.testcases.Login@17550481]" name="cac_SignIn" duration-ms="9225" started-at="2015-03-13T18:34:15Z" data-provider="DataProvider" finished-at="2015-03-13T18:34:24Z">
+        <test-method status="PASS" signature="cac_login(java.util.LinkedHashMap)[pri:0, instance:com.ciphercloud.portal.testcases.Login@1176dcec]" name="cac_login" duration-ms="13963" started-at="2015-03-16T12:30:47Z" data-provider="DataProvider" finished-at="2015-03-16T12:31:01Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{field={User Name=admin, Password=admin}, button={login=Log In}, label={message=You have logged in successfully}, url={url=http://172.16.18.13:8080/feproxy-webadmin/login}, title={title=CipherCloud Console, Title2=Admin Authentication}}]]>
+                <![CDATA[{field={User Name=admin, Password=admin}, button={login=Log In}, label={message=You have logged in successfully}, url={url=http://172.16.18.13:8080/feproxy-webadmin/login}, checkbox={selectcheckbox=AD Authentication}, title={title=CipherCloud Console, Title2=Admin Authentication}}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- cac_SignIn -->
-        <test-method status="PASS" signature="cac_configureAD(java.util.LinkedHashMap)[pri:0, instance:com.ciphercloud.portal.testcases.Login@17550481]" name="cac_configureAD" duration-ms="6597" started-at="2015-03-13T18:34:24Z" data-provider="DataProvider" finished-at="2015-03-13T18:34:31Z">
+        </test-method> <!-- cac_login -->
+        <test-method status="PASS" signature="cac_endUserAuth(java.util.LinkedHashMap)[pri:0, instance:com.ciphercloud.portal.testcases.Login@1176dcec]" name="cac_endUserAuth" duration-ms="4466" depends-on-groups="login" started-at="2015-03-16T12:31:01Z" data-provider="DataProvider" finished-at="2015-03-16T12:31:05Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{field={AD Server Hostname/IP Address=AD, Port Number=389, Base DN Settings=dc=djfjsdf,dc=gjgjh, AD Domain=fhgfghfgh.com}, button={connectAD=Connect AD Server, connect=Connect}, label={AD User ID=apere, AD Password=dhfjsh}, title={title=Admin Authentication}}]]>
+                <![CDATA[{field={AD Server Hostname/IP Address=AD, Port Number=389, Base DN Settings=dc=djfjsdf,dc=gjgjh, AD Domain=fhgfghfgh.com}, button={connectAD=Connect & Save, connect=Connect}, label={AD User ID=apere, AD Password=dhfjsh}, title={title=End User Authentication}}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cac_endUserAuth -->
+        <test-method status="PASS" signature="cac_logout(java.util.LinkedHashMap)[pri:0, instance:com.ciphercloud.portal.testcases.Login@1176dcec]" name="cac_logout" duration-ms="2035" depends-on-groups="endAuth" started-at="2015-03-16T12:31:05Z" data-provider="DataProvider" finished-at="2015-03-16T12:31:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{button={logout=Logout}}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cac_logout -->
+      </class> <!-- com.ciphercloud.portal.testcases.Login -->
+    </test> <!-- configEndAuth -->
+    <test name="configAD" duration-ms="23120" started-at="2015-03-16T07:00:47Z" finished-at="2015-03-16T07:01:10Z">
+      <class name="com.ciphercloud.portal.testcases.Login">
+        <test-method status="PASS" signature="cac_login(java.util.LinkedHashMap)[pri:0, instance:com.ciphercloud.portal.testcases.Login@76329302]" name="cac_login" duration-ms="14026" started-at="2015-03-16T12:30:47Z" data-provider="DataProvider" finished-at="2015-03-16T12:31:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{field={User Name=admin, Password=admin}, button={login=Log In}, label={message=You have logged in successfully}, url={url=http://172.16.18.13:8080/feproxy-webadmin/login}, checkbox={selectcheckbox=AD Authentication}, title={title=CipherCloud Console, Title2=Admin Authentication}}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cac_login -->
+        <test-method status="PASS" signature="cac_configureAD(java.util.LinkedHashMap)[pri:0, instance:com.ciphercloud.portal.testcases.Login@76329302]" name="cac_configureAD" duration-ms="7342" depends-on-groups="login" started-at="2015-03-16T12:31:01Z" data-provider="DataProvider" finished-at="2015-03-16T12:31:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{field={AD Server Hostname/IP Address=AD, Port Number=389, Base DN Settings=dc=djfjsdf,dc=gjgjh, AD Domain=fhgfghfgh.com}, button={connectAD=Connect AD Server, connect=Connect}, label={AD User ID=apere, AD Password=dhfjsh}, checkbox={selectcheckbox=AD Authentication}, title={title=Admin Authentication}}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cac_configureAD -->
+        <test-method status="PASS" signature="cac_logout(java.util.LinkedHashMap)[pri:0, instance:com.ciphercloud.portal.testcases.Login@76329302]" name="cac_logout" duration-ms="1721" depends-on-groups="configAD" started-at="2015-03-16T12:31:08Z" data-provider="DataProvider" finished-at="2015-03-16T12:31:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{button={logout=Logout}}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cac_logout -->
       </class> <!-- com.ciphercloud.portal.testcases.Login -->
-    </test> <!-- LOGIN -->
+    </test> <!-- configAD -->
   </suite> <!-- EN_Sites -->
 </testng-results>
