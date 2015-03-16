@@ -3,7 +3,7 @@
 
 
  <parameter name="browser" value="chrome"/>
-  <parameter name="localhost" value="true"/>
+  <parameter name="localhost" value="false"/>
 
 
 	<test name="BeforeAppEx" preserve-order="true">

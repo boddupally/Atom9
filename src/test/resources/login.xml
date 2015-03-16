@@ -2,7 +2,7 @@
 <suite name="EN_Sites" verbose="1" preserve-order="true" >
 
 
- <parameter name="browser" value="chrome"/>
+ <parameter name="browser" value="firefox"/>
   <parameter name="localhost" value="true"/>
 
 
