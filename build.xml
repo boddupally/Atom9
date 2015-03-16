@@ -73,7 +73,7 @@
 									<fileset dir="${basedir}/ScreenShot" includes="**"/>
 								</copy>
 						
-						<copy file="${testng.report.dir}/emailable-report.html" todir="${basedir}/testng-xslt"/>
+						<copy file="${basedir}/test-output/emailable-report.html" todir="${basedir}/testng-xslt"/>
 			 </target>
 
 </project>
