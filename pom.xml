@@ -62,13 +62,11 @@
 			<artifactId>sikuli-webdriver</artifactId>
 			<version>1.0.1</version>
 		</dependency>
-
 		<dependency>
 			<groupId>org.sikuli</groupId>
 			<artifactId>sikuli-api</artifactId>
 			<version>1.1.0</version>
 		</dependency>
-
 		<dependency>
 			<groupId>org.sikuli</groupId>
 			<artifactId>sikuli-core</artifactId>
@@ -244,7 +242,7 @@
 
 					<systemPropertyVariables>
 			<application.properties>src/test/resources/CipherCloud-APP-Util.properties</application.properties>
-			<browserName>${browser}</browserName>
+			<browserName>${browserName}</browserName>
           <!--   <propertyName>${browser}</propertyName>
              <propertyName>${localhost}</propertyName> -->
             
@@ -331,9 +329,6 @@
 		</properties> -->
 		
 <!-- <reporting>
-
-
-
         <plugins>
             <plugin>
                 <groupId>org.testng.xslt</groupId>
